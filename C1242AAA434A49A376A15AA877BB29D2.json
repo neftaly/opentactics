@@ -1,0 +1,62 @@
+{
+	"Type": "Generic",
+	"GUID": "C1242AAA434A49A376A15AA877BB29D2",
+	"Name": "Rock",
+	"CollisionType": "Ground",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 0.5,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 20,
+		"G": 20,
+		"B": 20
+	},
+	"Flippable": false,
+	"Models": [
+		{
+			"Model": "Rock.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"IsTransparent": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [],
+	"SnapPoints": [
+		{
+			"X": 0,
+			"Y": 0,
+			"Z": 0.5,
+			"Range": 5,
+			"SnapRotation": false,
+			"RotationOffset": 0
+		}
+	]
+}

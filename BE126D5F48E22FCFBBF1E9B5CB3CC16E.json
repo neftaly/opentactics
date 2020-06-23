@@ -1,0 +1,53 @@
+{
+	"Type": "Generic",
+	"GUID": "BE126D5F48E22FCFBBF1E9B5CB3CC16E",
+	"Name": "Trollspawn Brute",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 0.4,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 20,
+		"G": 20,
+		"B": 20
+	},
+	"Flippable": false,
+	"Models": [
+		{
+			"Model": "Trollspawn Brute.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"IsTransparent": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [],
+	"SnapPoints": []
+}

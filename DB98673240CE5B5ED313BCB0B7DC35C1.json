@@ -1,0 +1,94 @@
+{
+	"Type": "Generic",
+	"GUID": "317F67324746843D41F8A68348119CAB",
+	"Name": "GrassBig",
+	"CollisionType": "Ground",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 0.5,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 0,
+		"G": 176,
+		"B": 0
+	},
+	"SecondaryColor":
+	{
+		"R": 20,
+		"G": 20,
+		"B": 20
+	},
+	"Flippable": false,
+	"Models": [
+		{
+			"Model": "Grass 4.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1.98,
+				"Y": 1.98,
+				"Z": 1.98
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"IsTransparent": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [],
+	"SnapPoints": [
+		{
+			"X": 0,
+			"Y": -5.1,
+			"Z": 0,
+			"Range": 6,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": -5.1,
+			"Y": 0,
+			"Z": 0,
+			"Range": 6,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": 0,
+			"Y": 0,
+			"Z": 0,
+			"Range": 4,
+			"SnapRotation": false,
+			"RotationOffset": 0
+		},
+		{
+			"X": 5.1,
+			"Y": 0,
+			"Z": 0,
+			"Range": 6,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		},
+		{
+			"X": 0,
+			"Y": 5.1,
+			"Z": 0,
+			"Range": 6,
+			"SnapRotation": true,
+			"RotationOffset": 0
+		}
+	]
+}

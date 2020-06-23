@@ -1,0 +1,53 @@
+{
+	"Type": "Generic",
+	"GUID": "51F3F44D41CC219B2A28708C5BE047AD",
+	"Name": "Attack Counter",
+	"CollisionType": "Penetrable",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 220,
+		"G": 115,
+		"B": 0
+	},
+	"SecondaryColor":
+	{
+		"R": 20,
+		"G": 20,
+		"B": 20
+	},
+	"Flippable": false,
+	"Models": [
+		{
+			"Model": "Attack Counter.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"IsTransparent": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [],
+	"SnapPoints": []
+}

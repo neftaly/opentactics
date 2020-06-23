@@ -1,0 +1,53 @@
+{
+	"Type": "Generic",
+	"GUID": "00FFCEB5470277AD92505BA5A0047B2B",
+	"Name": "Fire Marker",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 0.4,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 220,
+		"G": 7,
+		"B": 0
+	},
+	"SecondaryColor":
+	{
+		"R": 20,
+		"G": 20,
+		"B": 20
+	},
+	"Flippable": false,
+	"Models": [
+		{
+			"Model": "Fire Marker.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 1
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"IsTransparent": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [],
+	"SnapPoints": []
+}
