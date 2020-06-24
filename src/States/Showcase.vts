@@ -24,7 +24,7 @@
 	"requiredPackages": [
 		{
 			"name": "Open Tactics",
-			"guid": "CBA1830F49A346729A74F8B9CB82FA78"
+			"guid": "FD218F1E42E648BDA6E7202A60AF6BAC"
 		},
 		{
 			"name": "Dice",
