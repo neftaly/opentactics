@@ -1,0 +1,23 @@
+name: Upload to mod.io
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          (mkdir -p dist; cd src; zip -r - * > ../dist/modfile.zip)
+      - uses: nickelc/upload-to-modio@v1
+        id: upload
+        with:
+          token: ${{ secrets.MODIO_TOKEN }}
+          game: 206
+          mod: 1041
+          path: dist/modfile.zip
+      - run: |
+          echo "${{ steps.upload.outputs.url }}"
