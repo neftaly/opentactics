@@ -16,8 +16,8 @@ jobs:
         id: upload
         with:
           token: ${{ secrets.MODIO_TOKEN }}
-          game: 206
-          mod: 1041
-          path: dist/modfile.zip
+          game: 0
+          mod: 0
+          path: ./dist/modfile.zip
       - run: |
           echo "${{ steps.upload.outputs.url }}"
