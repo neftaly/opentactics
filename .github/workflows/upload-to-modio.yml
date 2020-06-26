@@ -10,14 +10,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: |
-          (mkdir -p dist; cd src; zip -r - * > ../dist/modfile.zip)
+      - name: Build modfile.zip
+        id: build
+        run: |
+          mkdir -p dist
+          cd src
+          zip -r - * > ../dist/modfile.zip
+          cd ../
+
+      - name: Extract metadata
+        id: extract
+        run: |
+            GAME_ID=$(jq '.Game' ./src/metadata.json)
+            MOD_ID=$(jq '.Mod' ./src/metadata.json)
+            VERSION=$(jq '.Version' ./src/metadata.json)
+            echo "::set-output name=GAME::$GAME_ID"
+            echo "::set-output name=MOD::$MOD_ID"
+            echo "::set-output name=VERSION::$VERSION_ID"
+
       - uses: nickelc/upload-to-modio@v1
         id: upload
         with:
           token: ${{ secrets.MODIO_TOKEN }}
-          game: 0
-          mod: 0
+          game: ${{ steps.extract.outputs.GAME }}
+          mod: ${{ steps.extract.outputs.MOD }}
+          version: ${{ steps.extract.outputs.VERSION }}
           path: ./dist/modfile.zip
       - run: |
           echo "${{ steps.upload.outputs.url }}"
